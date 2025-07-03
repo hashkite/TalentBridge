@@ -1,0 +1,12 @@
+@import "./base/variables.scss"; // Variabler som går att återanvända
+@import './base/fonts.scss';
+@import "./base/mixins"; // Hela strukturer som går att återanvända
+
+@import './components/paragraph--type--view';
+@import './components/user';
+@import './components/header';
+@import './components/landing';
+@import './components/login';
+@import './components/logout';
+@import './components/registration';
+@import './components/formtext.scss';
