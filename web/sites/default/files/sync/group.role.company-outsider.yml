@@ -1,0 +1,15 @@
+uuid: 68a2b4fc-b7a9-43b6-9fa4-29db1f0b8935
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.company
+    - user.role.authenticated
+id: company-outsider
+label: Outsider
+weight: -101
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: company
+permissions: {  }

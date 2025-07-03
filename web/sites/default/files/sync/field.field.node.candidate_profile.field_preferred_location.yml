@@ -1,0 +1,19 @@
+uuid: 1631e622-cc65-46e9-bec8-2d2b976a62b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preferred_location
+    - node.type.candidate_profile
+id: node.candidate_profile.field_preferred_location
+field_name: field_preferred_location
+entity_type: node
+bundle: candidate_profile
+label: 'Preferred Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 9047a098-ed4f-4b21-9d26-8c6b903bc8c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.company_hr
+  module:
+    - user
+id: user_remove_role_action.company_hr
+label: 'Remove the Company HR role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: company_hr

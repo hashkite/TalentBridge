@@ -1,0 +1,21 @@
+uuid: f90055fd-4b46-4bcc-8f06-98c0d93e0220
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_size
+    - node.type.company_profile
+  module:
+    - options
+id: node.company_profile.field_company_size
+field_name: field_company_size
+entity_type: node
+bundle: company_profile
+label: 'Company Size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

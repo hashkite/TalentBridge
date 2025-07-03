@@ -1,0 +1,33 @@
+uuid: 774e2bf9-24d5-4078-bed5-a9a270d16118
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.candidate-profile-menu
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_candidateprofilemenu
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:candidate-profile-menu'
+settings:
+  id: 'system_menu_block:candidate-profile-menu'
+  label: 'Candidate profile menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      candidate: candidate

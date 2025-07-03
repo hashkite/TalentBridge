@@ -1,0 +1,22 @@
+uuid: d7b17a54-d881-4474-b028-f67634585b4c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jobportal
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: jobportal_secondary_local_tasks
+theme: jobportal
+region: header
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

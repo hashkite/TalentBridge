@@ -1,0 +1,33 @@
+uuid: be655657-2b3d-41ed-b15b-30405f24ba95
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.company-hr
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_companyhr
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:company-hr'
+settings:
+  id: 'system_menu_block:company-hr'
+  label: 'Company HR'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      company_hr: company_hr

@@ -1,0 +1,33 @@
+uuid: d6ca458c-181b-4393-b911-a040482fe75a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.company
+    - user.role.company_hr
+id: company-hr
+label: HR
+weight: 103
+admin: false
+scope: insider
+global_role: company_hr
+group_type: company
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'create group_node:job_posting entity'
+  - 'delete own group_node:job_posting entity'
+  - 'delete own group_node:job_posting relationship'
+  - 'update own group_membership relationship'
+  - 'update own group_node:job_posting entity'
+  - 'update own group_node:job_posting relationship'
+  - 'view all group revisions'
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group revisions'
+  - 'view group_membership relationship'
+  - 'view group_node:job_posting entity'
+  - 'view group_node:job_posting relationship'
+  - 'view latest group version'
+  - 'view own unpublished group'
+  - 'view own unpublished group_node:job_posting entity'

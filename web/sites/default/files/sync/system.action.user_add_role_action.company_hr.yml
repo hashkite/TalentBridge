@@ -1,0 +1,14 @@
+uuid: 80c37f6d-c0e2-4715-9b0a-7757b00b92db
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.company_hr
+  module:
+    - user
+id: user_add_role_action.company_hr
+label: 'Add the Company HR role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: company_hr

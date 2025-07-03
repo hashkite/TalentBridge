@@ -1,0 +1,15 @@
+uuid: af76bd99-bc7a-45c9-8c38-20110fe7bbd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.apply
+  module:
+    - flag
+id: flag_action.apply_unflag
+label: Remove
+type: node
+plugin: 'flag_action:apply_unflag'
+configuration:
+  flag_id: apply
+  flag_action: unflag

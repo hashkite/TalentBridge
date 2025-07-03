@@ -1,0 +1,20 @@
+uuid: 1cbd82ad-5202-402e-a6b0-80cf65a0f395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_experience_summary
+  module:
+    - user
+id: user.user.field_experience_summary
+field_name: field_experience_summary
+entity_type: user
+bundle: user
+label: 'Experience Summary'
+description: 'Describe candidate’s work experience'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

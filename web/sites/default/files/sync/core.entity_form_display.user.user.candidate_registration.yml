@@ -1,0 +1,65 @@
+uuid: 6e3cb4ac-1666-4074-9387-7a4cf8f923fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.candidate_registration
+    - field.field.user.user.field_candidate_profile_visibili
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_company_website
+    - field.field.user.user.field_education
+    - field.field.user.user.field_experience_summary
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_languages_known
+    - field.field.user.user.field_linkedin_profile_url
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_preferred_locations
+    - field.field.user.user.field_profile_photo
+    - field.field.user.user.field_resume_upload
+    - field.field.user.user.field_skills
+    - field.field.user.user.field_subscription_plan
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.candidate_registration
+targetEntityType: user
+bundle: user
+mode: candidate_registration
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_full_name:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_candidate_profile_visibili: true
+  field_company_name: true
+  field_company_website: true
+  field_education: true
+  field_experience_summary: true
+  field_languages_known: true
+  field_linkedin_profile_url: true
+  field_phone_number: true
+  field_preferred_locations: true
+  field_profile_photo: true
+  field_resume_upload: true
+  field_skills: true
+  field_subscription_plan: true
+  language: true
+  timezone: true
+  user_picture: true

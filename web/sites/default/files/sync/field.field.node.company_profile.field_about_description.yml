@@ -1,0 +1,24 @@
+uuid: 2b2aa256-60b7-4131-8779-3367c9b53750
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_description
+    - filter.format.full_html
+    - node.type.company_profile
+  module:
+    - text
+id: node.company_profile.field_about_description
+field_name: field_about_description
+entity_type: node
+bundle: company_profile
+label: 'About / Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

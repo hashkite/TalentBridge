@@ -1,0 +1,36 @@
+uuid: d5ab538b-4c00-4f94-97ca-a49d0889952b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_application_status
+field_name: field_application_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: applied_applied_shortlisted_shortlisted_interviewed_interviewed_rejected_rejected_hired_hired
+      label: Applied
+    -
+      value: shortlisted
+      label: Shortlisted
+    -
+      value: interviewed
+      label: Interviewed
+    -
+      value: rejected
+      label: Rejected
+    -
+      value: hired
+      label: Hired
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

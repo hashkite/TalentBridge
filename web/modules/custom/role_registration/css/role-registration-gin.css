@@ -1,0 +1,13 @@
+.form-item {
+  margin-bottom: 1.5rem;
+}
+
+.form-submit {
+  background-color: #0055a5;
+  color: #fff;
+  font-weight: bold;
+}
+
+.page-wrapper {
+    max-width: 100%;
+}

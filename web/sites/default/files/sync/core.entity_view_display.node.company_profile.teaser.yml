@@ -1,0 +1,52 @@
+uuid: 0818046f-1d0f-4c95-9be4-ddbdbdc387f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.company_profile.body
+    - field.field.node.company_profile.field_about_description
+    - field.field.node.company_profile.field_company_logo
+    - field.field.node.company_profile.field_company_size
+    - field.field.node.company_profile.field_contact_email
+    - field.field.node.company_profile.field_contact_phone
+    - field.field.node.company_profile.field_founded_year
+    - field.field.node.company_profile.field_headquarters_location
+    - field.field.node.company_profile.field_industry
+    - field.field.node.company_profile.field_social_links
+    - field.field.node.company_profile.field_subscription_plan
+    - field.field.node.company_profile.field_website_url
+    - node.type.company_profile
+  module:
+    - text
+    - user
+id: node.company_profile.teaser
+targetEntityType: node
+bundle: company_profile
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_about_description: true
+  field_company_logo: true
+  field_company_size: true
+  field_contact_email: true
+  field_contact_phone: true
+  field_founded_year: true
+  field_headquarters_location: true
+  field_industry: true
+  field_social_links: true
+  field_subscription_plan: true
+  field_website_url: true

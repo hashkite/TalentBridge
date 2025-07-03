@@ -1,0 +1,8 @@
+uuid: 4bd88b50-c560-4b5f-ab1a-e9f10b1f1f31
+langcode: en
+status: true
+dependencies: {  }
+id: candidate-profile-menu
+label: 'Candidate profile menu'
+description: ''
+locked: false

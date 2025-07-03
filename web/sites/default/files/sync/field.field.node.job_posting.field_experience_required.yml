@@ -1,0 +1,19 @@
+uuid: 86a4d144-19ac-4676-9bad-b97116405332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experience_required
+    - node.type.job_posting
+id: node.job_posting.field_experience_required
+field_name: field_experience_required
+entity_type: node
+bundle: job_posting
+label: 'Experience Required'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

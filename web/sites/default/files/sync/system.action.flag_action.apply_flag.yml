@@ -1,0 +1,15 @@
+uuid: 57556666-50dc-4416-b720-474732f5f5bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.apply
+  module:
+    - flag
+id: flag_action.apply_flag
+label: Apply
+type: node
+plugin: 'flag_action:apply_flag'
+configuration:
+  flag_id: apply
+  flag_action: flag

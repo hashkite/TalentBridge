@@ -1,0 +1,24 @@
+uuid: d19d365c-0db3-4ea1-802a-013a8f187abd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.company_profile
+  module:
+    - text
+id: node.company_profile.body
+field_name: body
+entity_type: node
+bundle: company_profile
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

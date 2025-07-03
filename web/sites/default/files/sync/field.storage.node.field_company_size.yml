@@ -1,0 +1,33 @@
+uuid: 38555ccd-25c3-46c4-adbf-9b9d146a2e4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_company_size
+field_name: field_company_size
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1_10'
+      label: 1-10
+    -
+      value: '11_50'
+      label: 11-50
+    -
+      value: '51_200'
+      label: 51-200
+    -
+      value: '200'
+      label: 200+
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,38 @@
+uuid: ddde1588-8f66-4d47-9c25-ddbb7d8aa8fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_posting.field_application_deadline
+    - field.field.node.job_posting.field_company_reference
+    - field.field.node.job_posting.field_experience_required
+    - field.field.node.job_posting.field_job_description
+    - field.field.node.job_posting.field_job_type
+    - field.field.node.job_posting.field_location
+    - field.field.node.job_posting.field_posted_by
+    - field.field.node.job_posting.field_skills
+    - field.field.node.job_posting.field_status
+    - node.type.job_posting
+  module:
+    - user
+id: node.job_posting.teaser
+targetEntityType: node
+bundle: job_posting
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_application_deadline: true
+  field_company_reference: true
+  field_experience_required: true
+  field_job_description: true
+  field_job_type: true
+  field_location: true
+  field_posted_by: true
+  field_skills: true
+  field_status: true

@@ -1,0 +1,9 @@
+uuid: 71de5b31-a764-4d39-af39-859f5cbcb34d
+langcode: en
+status: true
+dependencies: {  }
+id: company_admin
+label: 'Company Admin'
+weight: 6
+is_admin: null
+permissions: {  }

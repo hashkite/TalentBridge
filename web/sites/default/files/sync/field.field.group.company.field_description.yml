@@ -1,0 +1,24 @@
+uuid: f168ac65-b96c-45b7-9143-b3096b1def5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_description
+    - filter.format.full_html
+    - group.type.company
+  module:
+    - text
+id: group.company.field_description
+field_name: field_description
+entity_type: group
+bundle: company
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

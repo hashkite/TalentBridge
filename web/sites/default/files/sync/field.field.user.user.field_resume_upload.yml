@@ -1,0 +1,27 @@
+uuid: 11311d9a-96cc-4b50-a0a4-628a7b7ca2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_resume_upload
+  module:
+    - file
+    - user
+id: user.user.field_resume_upload
+field_name: field_resume_upload
+entity_type: user
+bundle: user
+label: 'Resume Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: ''
+  description_field: false
+field_type: file

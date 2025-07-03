@@ -1,0 +1,29 @@
+uuid: add57aca-a82d-438e-916d-15f87037275b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_applicant
+    - node.type.application
+id: node.application.field_applicant
+field_name: field_applicant
+entity_type: node
+bundle: application
+label: Applicant
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

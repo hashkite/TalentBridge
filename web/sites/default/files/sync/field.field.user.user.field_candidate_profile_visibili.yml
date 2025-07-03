@@ -1,0 +1,22 @@
+uuid: 627f533d-6cf5-4a44-8799-d1db4d5668ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_candidate_profile_visibili
+  module:
+    - user
+id: user.user.field_candidate_profile_visibili
+field_name: field_candidate_profile_visibili
+entity_type: user
+bundle: user
+label: 'Candidate Profile Visibility'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

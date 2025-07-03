@@ -1,0 +1,18 @@
+uuid: 82038509-b984-464b-ab10-8facdbe78842
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Application
+type: application
+description: 'Stores candidate applications for job posts.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

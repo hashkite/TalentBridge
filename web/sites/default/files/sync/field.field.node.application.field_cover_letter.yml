@@ -1,0 +1,19 @@
+uuid: aeac45cf-6e15-4cbc-add6-6c9a1782982d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover_letter
+    - node.type.application
+id: node.application.field_cover_letter
+field_name: field_cover_letter
+entity_type: node
+bundle: application
+label: 'Cover Letter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

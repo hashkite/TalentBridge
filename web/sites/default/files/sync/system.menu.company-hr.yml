@@ -1,0 +1,8 @@
+uuid: 15ac923b-449a-4626-9b64-19eb6288226b
+langcode: en
+status: true
+dependencies: {  }
+id: company-hr
+label: 'Company HR'
+description: ''
+locked: false

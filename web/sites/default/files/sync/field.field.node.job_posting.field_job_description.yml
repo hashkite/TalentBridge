@@ -1,0 +1,24 @@
+uuid: 5444febf-90b6-4d6e-955a-2909288efb7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_description
+    - filter.format.restricted_html
+    - node.type.job_posting
+  module:
+    - text
+id: node.job_posting.field_job_description
+field_name: field_job_description
+entity_type: node
+bundle: job_posting
+label: 'Job Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - restricted_html
+field_type: text_long

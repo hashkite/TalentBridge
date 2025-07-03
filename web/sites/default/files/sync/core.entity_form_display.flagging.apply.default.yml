@@ -1,0 +1,21 @@
+uuid: a0140583-79b0-4efc-b6b7-973d0efe0249
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.flagging.apply.field_hr_notes
+    - flag.flag.apply
+id: flagging.apply.default
+targetEntityType: flagging
+bundle: apply
+mode: default
+content:
+  field_hr_notes:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

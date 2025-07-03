@@ -1,0 +1,51 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Alter user register form: show fields based on custom registration path.
+ */
+function role_registration_form_user_register_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  $current_path = \Drupal::service('path.current')->getPath();
+
+  $form['#attached']['library'][] = 'role_registration/gin_form_style';
+  // For Candidate Registration
+  if (strpos($current_path, '/register/candidate') === 0) {
+    $form['#title'] = t('Register as Candidate');
+
+    // Assign role
+    $form['account']['roles'] = [
+      '#type' => 'value',
+      '#value' => ['candidate'],
+    ];
+
+    // Show only relevant fields
+    $allowed_fields = ['field_full_name', 'field_phone_number', 'field_resume'];
+
+    foreach ($form as $key => $element) {
+      if (strpos($key, 'field_') === 0 && !in_array($key, $allowed_fields)) {
+        $form[$key]['#access'] = FALSE;
+      }
+    }
+  }
+
+  // For Company HR Registration
+  if (strpos($current_path, '/register/company') === 0) {
+    $form['#title'] = t('Register your business');
+
+    // Assign role
+    $form['account']['roles'] = [
+      '#type' => 'value',
+      '#value' => ['company_admin'],
+    ];
+
+    // Show only relevant fields
+    $allowed_fields = ['field_full_name', 'field_phone_number', 'field_company_name'];
+
+    foreach ($form as $key => $element) {
+      if (strpos($key, 'field_') === 0 && !in_array($key, $allowed_fields)) {
+        $form[$key]['#access'] = FALSE;
+      }
+    }
+  }
+}

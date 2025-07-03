@@ -1,0 +1,22 @@
+uuid: 2d67a091-39c2-4f0d-9de8-e9666c48700c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jobportal
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: jobportal_content
+theme: jobportal
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

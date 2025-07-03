@@ -1,0 +1,17 @@
+uuid: b1dcfdb0-7533-4c4d-a0d9-9f46d67a9470
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.application
+  module:
+    - flag
+    - node
+id: candidate
+label: Candidate
+weight: 4
+is_admin: null
+permissions:
+  - 'edit own application content'
+  - 'flag apply'
+  - 'unflag apply'

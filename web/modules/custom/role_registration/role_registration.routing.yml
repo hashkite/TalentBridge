@@ -1,0 +1,15 @@
+role_registration.candidate_register:
+  path: '/register/candidate'
+  defaults:
+    _entity_form: 'user.register'
+    _title: 'Register as Candidate'
+  requirements:
+    _access: 'TRUE'
+
+role_registration.company_register:
+  path: '/register/company'
+  defaults:
+    _entity_form: 'user.register'
+    _title: 'Register as Company HR'
+  requirements:
+    _access: 'TRUE'

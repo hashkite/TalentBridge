@@ -1,0 +1,32 @@
+uuid: 11b793d8-6523-43fc-b485-79d9f67a403e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.application.field_applicant
+    - field.field.node.application.field_application_status
+    - field.field.node.application.field_cover_letter
+    - field.field.node.application.field_hr_notes
+    - field.field.node.application.field_job_post
+    - field.field.node.application.field_resume_file
+    - node.type.application
+  module:
+    - user
+id: node.application.teaser
+targetEntityType: node
+bundle: application
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_applicant: true
+  field_application_status: true
+  field_cover_letter: true
+  field_hr_notes: true
+  field_job_post: true
+  field_resume_file: true

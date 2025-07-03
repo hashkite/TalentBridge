@@ -1,0 +1,23 @@
+uuid: e28ddb1e-60a5-4a06-a53d-621fb8db2df1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_founded_year
+    - node.type.company_profile
+id: node.company_profile.field_founded_year
+field_name: field_founded_year
+entity_type: node
+bundle: company_profile
+label: 'Founded Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

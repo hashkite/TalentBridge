@@ -1,0 +1,6 @@
+gin_form_style:
+  css:
+    theme:
+      css/gin.form.css: {}
+  dependencies:
+    - gin/gin

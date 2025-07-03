@@ -1,0 +1,139 @@
+uuid: 048ee745-e405-49a4-b9e7-b92c9c551e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.company_profile.body
+    - field.field.node.company_profile.field_about_description
+    - field.field.node.company_profile.field_company_logo
+    - field.field.node.company_profile.field_company_size
+    - field.field.node.company_profile.field_contact_email
+    - field.field.node.company_profile.field_contact_phone
+    - field.field.node.company_profile.field_founded_year
+    - field.field.node.company_profile.field_headquarters_location
+    - field.field.node.company_profile.field_industry
+    - field.field.node.company_profile.field_social_links
+    - field.field.node.company_profile.field_subscription_plan
+    - field.field.node.company_profile.field_website_url
+    - node.type.company_profile
+  module:
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.company_profile.default
+targetEntityType: node
+bundle: company_profile
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_about_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_company_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_company_size:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_contact_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_contact_phone:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_founded_year:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_headquarters_location:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_industry:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_social_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_subscription_plan:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_website_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

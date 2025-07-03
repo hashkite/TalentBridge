@@ -1,0 +1,15 @@
+uuid: dd65f5b3-508d-4037-9f8e-d7a01330468d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.company
+  module:
+    - user
+id: company-group_membership
+group_type: company
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

@@ -1,0 +1,15 @@
+uuid: b9f6104c-ad09-4243-bd5f-92ec8e80fcdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.company
+    - user.role.administrator
+id: company-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: company
+permissions: {  }

@@ -1,0 +1,23 @@
+uuid: 409f8121-b6bc-4d6b-b4ca-a2d4c63093b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_company_website
+  module:
+    - link
+    - user
+id: user.user.field_company_website
+field_name: field_company_website
+entity_type: user
+bundle: user
+label: 'Company Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

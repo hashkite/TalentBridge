@@ -1,0 +1,29 @@
+uuid: 7bf0734e-6e9f-4f76-8171-a49659e96fba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_candidate_skills
+    - node.type.candidate_profile
+    - taxonomy.vocabulary.skills
+id: node.candidate_profile.field_candidate_skills
+field_name: field_candidate_skills
+entity_type: node
+bundle: candidate_profile
+label: Skills
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skills: skills
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

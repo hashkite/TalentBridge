@@ -1,0 +1,14 @@
+uuid: d35e32bf-75e6-44e3-a705-26cd0a582538
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.company
+id: company-admin
+label: Admin
+weight: 100
+admin: true
+scope: individual
+global_role: null
+group_type: company
+permissions: {  }

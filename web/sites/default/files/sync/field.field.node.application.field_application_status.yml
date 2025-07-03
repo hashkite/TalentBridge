@@ -1,0 +1,23 @@
+uuid: 72b477f2-35a4-4feb-ade9-14ca1151b12f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_status
+    - node.type.application
+  module:
+    - options
+id: node.application.field_application_status
+field_name: field_application_status
+entity_type: node
+bundle: application
+label: 'Application Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: applied_applied_shortlisted_shortlisted_interviewed_interviewed_rejected_rejected_hired_hired
+default_value_callback: ''
+settings: {  }
+field_type: list_string

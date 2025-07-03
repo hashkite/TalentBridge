@@ -1,0 +1,19 @@
+uuid: c70ef783-f0b5-43b4-8589-18418574f090
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.flagging.field_hr_notes
+    - flag.flag.apply
+id: flagging.apply.field_hr_notes
+field_name: field_hr_notes
+entity_type: flagging
+bundle: apply
+label: 'HR Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

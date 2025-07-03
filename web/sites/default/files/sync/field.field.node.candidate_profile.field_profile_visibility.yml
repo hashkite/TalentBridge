@@ -1,0 +1,21 @@
+uuid: a93e1cb4-e419-410d-9d20-31a36fcd1fe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_visibility
+    - node.type.candidate_profile
+id: node.candidate_profile.field_profile_visibility
+field_name: field_profile_visibility
+entity_type: node
+bundle: candidate_profile
+label: 'Profile Visibility'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

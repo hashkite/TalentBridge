@@ -1,0 +1,21 @@
+uuid: 8dfb3a11-3c6c-408f-9ad3-ab0e4d6a1e66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_deadline
+    - node.type.job_posting
+  module:
+    - datetime
+id: node.job_posting.field_application_deadline
+field_name: field_application_deadline
+entity_type: node
+bundle: job_posting
+label: 'Application Deadline'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

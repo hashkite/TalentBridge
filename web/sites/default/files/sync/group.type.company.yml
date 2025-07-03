@@ -1,0 +1,11 @@
+uuid: e48a1210-64c8-4e42-b4c8-97300996734b
+langcode: en
+status: true
+dependencies: {  }
+id: company
+label: Company
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

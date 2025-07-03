@@ -1,0 +1,73 @@
+uuid: 40c7a982-6df4-41ef-86d7-35219740dfec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.application.field_applicant
+    - field.field.node.application.field_application_status
+    - field.field.node.application.field_cover_letter
+    - field.field.node.application.field_hr_notes
+    - field.field.node.application.field_job_post
+    - field.field.node.application.field_resume_file
+    - node.type.application
+  module:
+    - file
+    - options
+    - text
+    - user
+id: node.application.default
+targetEntityType: node
+bundle: application
+mode: default
+content:
+  field_applicant:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_application_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_cover_letter:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_hr_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_job_post:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_resume_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

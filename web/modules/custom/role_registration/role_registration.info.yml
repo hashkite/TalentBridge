@@ -1,0 +1,7 @@
+name: 'Role Registration'
+type: module
+description: 'Allows user registration based on role using custom paths.'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - user

@@ -1,0 +1,9 @@
+uuid: 6b168279-95aa-4e19-944e-0e0d9f69495a
+langcode: en
+status: true
+dependencies: {  }
+name: subscription
+vid: subscription
+description: null
+weight: 0
+new_revision: false

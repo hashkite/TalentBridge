@@ -1,0 +1,17 @@
+uuid: 59fbcf57-77ae-4da3-8e4b-91bd5edfafb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.company
+    - user.role.candidate
+id: company-candidate
+label: Candidate
+weight: 104
+admin: false
+scope: outsider
+global_role: candidate
+group_type: company
+permissions:
+  - 'view group'
+  - 'view group_node:job_posting entity'

@@ -1,0 +1,11 @@
+uuid: daf6f75a-573a-4dc3-83b3-4981535d36f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.candidate_registration
+label: 'Candidate registration'
+description: ''
+targetEntityType: user
+cache: true

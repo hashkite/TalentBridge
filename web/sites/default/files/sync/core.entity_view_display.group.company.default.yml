@@ -1,0 +1,33 @@
+uuid: 4ab4058d-a728-4dd7-8f82-463177452bf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.company.field_description
+    - group.type.company
+  module:
+    - text
+id: group.company.default
+targetEntityType: group
+bundle: company
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  changed: true
+  created: true
+  uid: true

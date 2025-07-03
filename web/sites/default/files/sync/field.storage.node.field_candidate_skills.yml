@@ -1,0 +1,20 @@
+uuid: e4f9c599-f651-4b09-a90d-ef2ae4e179e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_candidate_skills
+field_name: field_candidate_skills
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
