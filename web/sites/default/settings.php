@@ -288,7 +288,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'J-nIvM9ngiYPYnM0sstFlVdYf6XILDdzybwCbjjkw_kLyue1Ylz_7REbdUtV-3LLm8Z_4DBYSA';
 
 /**
  * Deployment identifier.
@@ -897,3 +897,16 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'u808770276_talenthub',
+  'username' => 'u808770276_talenthub',
+  'password' => 'GD4-hedge',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
+  'driver' => 'mysql',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_70yLlA_LqCcN8DSNXDtd1YBeVJSepo1sHGAObbk_gdwBcqkKMU-1gmmruWnB_fc3utCrBJ04zA/sync';
